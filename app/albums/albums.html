@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-controller="UserController as userCtrl">
+<body ng-controller="AlbumController as albumCtrl">
   <ul>
-    <li ng-repeat="user in userCtrl.users"><a href="/users/{{user.id}}">{{user.name}}</a></li>
+    <li ng-repeat="album in albumCtrl.albums"><a href="">{{album.title}}</a></li>
   </ul>
 
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
